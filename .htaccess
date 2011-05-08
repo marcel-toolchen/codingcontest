@@ -1,0 +1,11 @@
+  RewriteEngine on
+
+  # If your site is running in a VirtualDocumentRoot at http://example.com/,
+  # uncomment the following line:
+  # /
+
+  # Rewrite URLs of the form 'x' to the form 'index.php?q=x'.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]

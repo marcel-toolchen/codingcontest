@@ -1,0 +1,2 @@
+1. Datenbankdump unter 'install/dump.sql' einspielen
+2. In der Datei 'config/config.inc' die Datenbankzugangsdaten und die Base-Url konfigurieren
